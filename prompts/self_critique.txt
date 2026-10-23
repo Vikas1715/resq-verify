@@ -1,0 +1,17 @@
+You are reviewing an emergency allocation plan that you wrote earlier. Check it carefully against EVERY hard rule below. Do the arithmetic explicitly for each vehicle, team, shelter and incident.
+
+{{rules}}
+
+Scenario (JSON):
+<<<SCENARIO_JSON>>>
+{{scenario_json}}
+<<<END_SCENARIO_JSON>>>
+
+Plan to review (JSON):
+<<<PLAN_JSON>>>
+{{plan_json}}
+<<<END_PLAN_JSON>>>
+
+Return ONLY one JSON object with this structure:
+{"plan_is_valid": true or false, "issues": [{"rule": "R1", "description": "what is wrong and where"}]}
+Use an empty issues list only if you are confident the plan satisfies every rule.

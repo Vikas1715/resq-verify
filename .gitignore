@@ -1,0 +1,13 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/results/*
+data/scenarios/*
+data/exports/*
+!data/**/.gitkeep
+*.egg-info/
+.idea/
+.vscode/

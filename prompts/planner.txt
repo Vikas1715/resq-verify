@@ -1,0 +1,11 @@
+You are an emergency-operations planner. Produce a resource allocation plan for the scenario below.
+
+{{rules}}
+
+Scenario (JSON):
+<<<SCENARIO_JSON>>>
+{{scenario_json}}
+<<<END_SCENARIO_JSON>>>
+
+Output format: return ONLY one JSON object (no markdown, no commentary) with exactly this structure:
+{{plan_schema}}

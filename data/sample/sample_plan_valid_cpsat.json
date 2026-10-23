@@ -1,0 +1,108 @@
+{
+ "_label": "DEMO DATA \u2014 NOT EXPERIMENTAL RESULT (CP-SAT plan for the sample scenario, for trying the Verification Lab)",
+ "team_assignments": [
+  {
+   "team_id": "TEAM-01",
+   "incident_id": "INC-01"
+  },
+  {
+   "team_id": "TEAM-02",
+   "incident_id": "INC-03"
+  },
+  {
+   "team_id": "TEAM-03",
+   "incident_id": "INC-04"
+  }
+ ],
+ "vehicle_assignments": [
+  {
+   "vehicle_id": "VEH-01",
+   "incident_id": "INC-03",
+   "trips": 1,
+   "people": 20
+  },
+  {
+   "vehicle_id": "VEH-02",
+   "incident_id": "INC-03",
+   "trips": 2,
+   "people": 12
+  },
+  {
+   "vehicle_id": "VEH-03",
+   "incident_id": "INC-04",
+   "trips": 4,
+   "people": 24
+  },
+  {
+   "vehicle_id": "VEH-04",
+   "incident_id": "INC-01",
+   "trips": 2,
+   "people": 24
+  },
+  {
+   "vehicle_id": "VEH-05",
+   "incident_id": "INC-03",
+   "trips": 1,
+   "people": 30
+  },
+  {
+   "vehicle_id": "VEH-05",
+   "incident_id": "INC-04",
+   "trips": 1,
+   "people": 30
+  },
+  {
+   "vehicle_id": "VEH-06",
+   "incident_id": "INC-03",
+   "trips": 1,
+   "people": 6
+  },
+  {
+   "vehicle_id": "VEH-06",
+   "incident_id": "INC-04",
+   "trips": 3,
+   "people": 18
+  }
+ ],
+ "shelter_allocations": [
+  {
+   "incident_id": "INC-01",
+   "shelter_id": "SHL-01",
+   "people": 24
+  },
+  {
+   "incident_id": "INC-03",
+   "shelter_id": "SHL-01",
+   "people": 36
+  },
+  {
+   "incident_id": "INC-03",
+   "shelter_id": "SHL-02",
+   "people": 32
+  },
+  {
+   "incident_id": "INC-04",
+   "shelter_id": "SHL-03",
+   "people": 72
+  }
+ ],
+ "unserved_demand": [
+  {
+   "incident_id": "INC-01",
+   "people": 57
+  },
+  {
+   "incident_id": "INC-02",
+   "people": 42
+  },
+  {
+   "incident_id": "INC-03",
+   "people": 9
+  },
+  {
+   "incident_id": "INC-04",
+   "people": 1
+  }
+ ],
+ "reasoning_summary": "CP-SAT solution"
+}

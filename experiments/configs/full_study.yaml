@@ -1,0 +1,16 @@
+# Main study on the TEST seeds (2000-2009), run only after the pilot has fixed prompts, levels and budgets.
+# Rough LLM-call count: scenarios x repetitions x (1 shared first plan + up to 4 each for M2, M3, M5)
+#   = 50 x 3 x 13 = 1950 at most. Check cost first.
+# Set PRICE_INPUT_PER_M_TOKENS / PRICE_OUTPUT_PER_M_TOKENS in .env to have cost estimated.
+name: full-study
+description: Budget-matched comparison of feedback strategies on difficulty levels L0-L4, 3 repetitions per scenario.
+difficulty_levels: [L0, L1, L2, L3, L4]
+num_scenarios: 10
+base_seed: 2000
+repetitions: 3
+methods: [llm_only, self_critique, resq_verify, resample_verify, ortools]
+call_budgets: [1, 2, 3, 5]
+nested_budgets: true
+shared_initial_plan: true
+feedback_format: structured
+solver_time_limit_s: 30

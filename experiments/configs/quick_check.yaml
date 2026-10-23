@@ -1,0 +1,14 @@
+# Tiny run to confirm your Gemini key and the whole pipeline work (a few minutes, a few dozen API calls).
+# It exercises all five methods and two call budgets, but it is far too small to conclude anything.
+name: quick-check
+description: Smoke test of all five methods on 2 small scenarios, call budgets 1 and 3.
+sizes: [small]
+scarcity: [high]
+num_scenarios: 2
+base_seed: 42
+repetitions: 1
+methods: [llm_only, self_critique, resq_verify, resample_verify, ortools]
+call_budgets: [1, 3]
+nested_budgets: true
+shared_initial_plan: true
+feedback_format: structured

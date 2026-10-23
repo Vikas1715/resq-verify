@@ -1,0 +1,15 @@
+# Pilot on the DEVELOPMENT seeds (1000-1004). Use it to check that the levels are neither trivial nor impossible for the LLM,
+# to look at variance, and to freeze prompts and difficulty before the full study. Do not tune anything on the full-study seeds.
+# Rough LLM-call count: scenarios x repetitions x (1 shared first plan + up to 4 each for M2, M3, M5) = 25 x 1 x 13 = 325 at most.
+name: pilot
+description: Five difficulty levels L0-L4, 5 scenarios each, call budgets 1, 2, 3, 5.
+difficulty_levels: [L0, L1, L2, L3, L4]
+num_scenarios: 5
+base_seed: 1000
+repetitions: 1
+methods: [llm_only, self_critique, resq_verify, resample_verify, ortools]
+call_budgets: [1, 2, 3, 5]
+nested_budgets: true
+shared_initial_plan: true
+feedback_format: structured
+solver_time_limit_s: 20

@@ -1,0 +1,97 @@
+{
+ "experiment_id": "ADHOC-interactive",
+ "kind": "adhoc",
+ "name": "Interactive runs (Planning Lab)",
+ "description": "Single runs started from the UI/API.",
+ "status": "open",
+ "created_at": "2026-10-23T13:24:05.028+00:00",
+ "started_at": null,
+ "finished_at": null,
+ "config": {
+  "name": "Interactive runs (Planning Lab)",
+  "description": "Single runs started from the UI/API.",
+  "sizes": [
+   "small"
+  ],
+  "scarcity": [
+   "high"
+  ],
+  "difficulty_levels": [],
+  "num_scenarios": 5,
+  "base_seed": 42,
+  "repetitions": 1,
+  "methods": [
+   "llm_only",
+   "self_critique",
+   "resq_verify",
+   "resample_verify",
+   "ortools"
+  ],
+  "max_repair_rounds": 3,
+  "call_budgets": [
+   3
+  ],
+  "nested_budgets": true,
+  "self_critique_rounds": null,
+  "shared_initial_plan": true,
+  "feedback_format": "structured",
+  "temperature": null,
+  "max_output_tokens": null,
+  "request_delay_s": null,
+  "solver_time_limit_s": null,
+  "compute_reference": true,
+  "overrides": {}
+ },
+ "llm": {
+  "provider": "mock",
+  "model": "simulated-llm",
+  "is_simulated": true,
+  "temperature": 0.4,
+  "max_output_tokens": 8192
+ },
+ "prompt_version": "v1.1",
+ "prompt_hash": "436836bdcb98",
+ "prompt_template_hashes": {
+  "_rules.txt": "34ca558c524b",
+  "planner.txt": "0e78d676259e",
+  "self_critique.txt": "221e3f50e23b",
+  "revision.txt": "a002b441336f"
+ },
+ "is_simulated": true,
+ "storage_backend": "file",
+ "progress": {
+  "done": 0,
+  "total": 25,
+  "errors": 0
+ },
+ "references": {},
+ "message": "Container for interactive runs.",
+ "settings": {
+  "llm_provider": "mock",
+  "gemini_api_key": "set",
+  "gemini_model": "gemini-3.5-flash-lite",
+  "gemini_api_base": "https://generativelanguage.googleapis.com/v1beta",
+  "gemini_use_response_schema": false,
+  "gemini_thinking_budget": null,
+  "temperature": 0.4,
+  "max_output_tokens": 8192,
+  "llm_timeout_s": 120.0,
+  "llm_max_retries": 4,
+  "llm_use_seed": true,
+  "request_delay_s": 0.0,
+  "price_input_per_m": null,
+  "price_output_per_m": null,
+  "max_repair_rounds": 3,
+  "solver_time_limit_s": 10.0,
+  "solver_workers": 1,
+  "storage_backend": "file",
+  "mongodb_uri": "set",
+  "mongodb_database": "resq_verify",
+  "mongo_fallback_to_file": true,
+  "data_dir": "C:\\Users\\Vikas1715\\Desktop\\resq-verify-pro\\resq-verify\\demo_data",
+  "prompt_dir": "C:\\Users\\Vikas1715\\Desktop\\resq-verify-pro\\resq-verify\\prompts",
+  "backend_host": "127.0.0.1",
+  "backend_port": 8000,
+  "backend_url": "http://127.0.0.1:8000"
+ }
+}

@@ -1,0 +1,10 @@
+Hard rules (a plan that breaks any rule is INVALID and cannot be executed):
+R1 Vehicle capacity. For every vehicle assignment: people <= trips x vehicle.capacity. Across all of a vehicle's assignments, the sum of trips must be <= vehicle.max_trips.
+R2 Team availability. Only teams with available=true may be assigned. A team may be assigned to at most max_incidents distinct incidents.
+R3 Shelter capacity. The total people allocated to a shelter (over all incidents) must be <= shelter.capacity.
+R4 Road accessibility. Buses, trucks and ambulances may NOT be assigned to an incident whose road is blocked (roads[].blocked = true). Boats are not affected by road status.
+R5 Coverage and bookkeeping. For each incident: (a) people transported (sum of vehicle_assignments.people) must not exceed incident.people; (b) every transported person must be placed in a shelter, so the shelter_allocations for the incident must sum to exactly the people transported; (c) unserved_demand must contain, for each incident, exactly incident.people minus people transported (omit incidents where this is 0); (d) if any people are transported from an incident, at least one team must be assigned to that incident.
+R6 Compatibility. A vehicle may only be assigned to an incident if the vehicle's type is listed in that incident's allowed_vehicle_types.
+R7 Integrity. Use only IDs that exist in the scenario. Do not repeat the same (team, incident), (vehicle, incident) or (incident, shelter) pair. All numbers must be non-negative integers.
+
+Objective: maximise priority-weighted people served = sum over incidents of (priority x people transported to a shelter). Higher priority matters more, but never break a hard rule to serve more people. Leaving demand unserved is acceptable when resources are insufficient.

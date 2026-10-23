@@ -1,0 +1,28 @@
+An emergency allocation plan needs to be revised. Feedback on the current plan is given below.
+
+{{rules}}
+
+Scenario (JSON):
+<<<SCENARIO_JSON>>>
+{{scenario_json}}
+<<<END_SCENARIO_JSON>>>
+
+Current plan:
+<<<PLAN_JSON>>>
+{{plan_json}}
+<<<END_PLAN_JSON>>>
+
+Feedback on the current plan:
+<<<FEEDBACK>>>
+{{FEEDBACK}}
+<<<END_FEEDBACK>>>
+
+Instructions:
+1. Revise the plan so that it satisfies every hard rule above. Use the feedback to find the problems. The feedback may be incomplete, so the hard rules are what counts.
+2. Change as little as possible. Keep every assignment that is not involved in a problem exactly as it is.
+3. Do not create new problems. After changing a vehicle, team or shelter record, update the dependent records (shelter_allocations, unserved_demand) so the bookkeeping rules still hold.
+4. If an assignment cannot be made valid, remove or reduce it and report the affected people as unserved.
+5. If the feedback reports no problems, still check the plan against the rules and return it unchanged when it is valid.
+
+Output format: return ONLY the complete revised plan as one JSON object (no markdown, no commentary) with exactly this structure:
+{{plan_schema}}

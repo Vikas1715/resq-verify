@@ -1,0 +1,16 @@
+# DEMO ONLY - for the live project demonstration with the SIMULATED (mock) LLM. Not part of the research study.
+# Seeds 9000+ are never used by pilot.yaml (1000-1004) or full_study.yaml (2000-2009).
+# Zero Gemini calls when the demo backend is used (start_demo_backend.bat sets LLM_PROVIDER=mock).
+# Do NOT run this with a real Gemini key: 2 levels x 4 scenarios x 13 LLM runs could use up to ~ 8 x 13 = 104 calls.
+name: demo-mock-levels
+description: DEMO - simulated LLM, levels L1 and L3, 4 scenarios each, call budgets 1, 3, 5. NOT experimental results.
+difficulty_levels: [L1, L3]
+num_scenarios: 4
+base_seed: 9000
+repetitions: 1
+methods: [llm_only, self_critique, resq_verify, resample_verify, ortools]
+call_budgets: [1, 3, 5]
+nested_budgets: true
+shared_initial_plan: true
+feedback_format: structured
+solver_time_limit_s: 5

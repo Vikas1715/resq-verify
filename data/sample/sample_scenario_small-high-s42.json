@@ -1,0 +1,186 @@
+{
+ "scenario_id": "small-high-s42",
+ "generator_version": "1.0",
+ "seed": 42,
+ "size": "small",
+ "scarcity": "high",
+ "params": {
+  "n_incidents": 4,
+  "n_teams": 3,
+  "n_vehicles": 6,
+  "n_shelters": 3,
+  "blocked_road_prob": 0.2,
+  "transport_ratio": 0.6,
+  "shelter_ratio": 0.65,
+  "team_unavailable_prob": 0.25,
+  "overrides": {}
+ },
+ "incidents": [
+  {
+   "id": "INC-01",
+   "name": "Riverside (flood)",
+   "hazard": "flood",
+   "people": 81,
+   "priority": 4,
+   "road_id": "RD-01",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance",
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-02",
+   "name": "Hillcrest (landslide)",
+   "hazard": "landslide",
+   "people": 42,
+   "priority": 2,
+   "road_id": "RD-02",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-03",
+   "name": "Old Market (earthquake)",
+   "hazard": "earthquake",
+   "people": 77,
+   "priority": 5,
+   "road_id": "RD-03",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-04",
+   "name": "Lakeview (landslide)",
+   "hazard": "landslide",
+   "people": 73,
+   "priority": 5,
+   "road_id": "RD-04",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance"
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "id": "RD-01",
+   "blocked": true
+  },
+  {
+   "id": "RD-02",
+   "blocked": false
+  },
+  {
+   "id": "RD-03",
+   "blocked": false
+  },
+  {
+   "id": "RD-04",
+   "blocked": false
+  }
+ ],
+ "teams": [
+  {
+   "id": "TEAM-01",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-02",
+   "available": true,
+   "max_incidents": 2
+  },
+  {
+   "id": "TEAM-03",
+   "available": true,
+   "max_incidents": 1
+  }
+ ],
+ "vehicles": [
+  {
+   "id": "VEH-01",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-02",
+   "type": "ambulance",
+   "capacity": 6,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-03",
+   "type": "ambulance",
+   "capacity": 6,
+   "max_trips": 4
+  },
+  {
+   "id": "VEH-04",
+   "type": "boat",
+   "capacity": 12,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-05",
+   "type": "bus",
+   "capacity": 30,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-06",
+   "type": "ambulance",
+   "capacity": 6,
+   "max_trips": 4
+  }
+ ],
+ "shelters": [
+  {
+   "id": "SHL-01",
+   "name": "Shelter A",
+   "capacity": 69
+  },
+  {
+   "id": "SHL-02",
+   "name": "Shelter B",
+   "capacity": 32
+  },
+  {
+   "id": "SHL-03",
+   "name": "Shelter C",
+   "capacity": 76
+  }
+ ],
+ "difficulty": {
+  "total_demand": 273,
+  "total_transport_capacity": 164,
+  "total_shelter_capacity": 177,
+  "demand_to_transport_ratio": 1.6646,
+  "demand_to_shelter_ratio": 1.5424,
+  "blocked_road_fraction": 0.25,
+  "unreachable_incidents": 0,
+  "available_team_slots": 4,
+  "team_load_ratio": 1.0,
+  "feasible_vehicle_incident_pairs": 16,
+  "difficulty_score": 10.823
+ },
+ "content_hash": "12c0950f4923d148",
+ "created_at": null
+}

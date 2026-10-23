@@ -1,0 +1,14 @@
+:root { --brand:#1f6feb; --ink:#1b2430; --muted:#5b6776; --line:#dde3ec; --ok:#1a7f37; --bad:#c62828; --warn:#b26a00; --card:#ffffff; }
+.block-container { padding-top: 1.4rem; max-width: 1280px; }
+h1, h2, h3 { color: var(--ink); letter-spacing: -0.01em; }
+.rv-card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; }
+.rv-kpi { font-size: 1.7rem; font-weight: 650; color: var(--ink); line-height: 1.1; }
+.rv-kpi-label { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.rv-banner { border-radius: 10px; padding: 10px 14px; margin: 6px 0 12px; font-size: .92rem; border: 1px solid; }
+.rv-banner.sim { background:#fff4e5; border-color:#f0b35a; color:#7a4300; }
+.rv-banner.info { background:#eaf2ff; border-color:#b6d0fb; color:#17407f; }
+.rv-banner.none { background:#f1f3f6; border-color:var(--line); color:var(--muted); }
+.rv-pill { display:inline-block; padding:2px 10px; border-radius:999px; font-size:.78rem; font-weight:600; }
+.rv-pill.ok { background:#dcf5e3; color:var(--ok); } .rv-pill.bad { background:#fde2e2; color:var(--bad); } .rv-pill.warn { background:#fff0d6; color:var(--warn); }
+.rv-viol { border-left: 4px solid var(--bad); background:#fff7f7; padding:6px 10px; margin:4px 0; border-radius:4px; font-size:.9rem; }
+.rv-small { color: var(--muted); font-size:.85rem; }

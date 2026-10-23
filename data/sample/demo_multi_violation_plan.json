@@ -1,0 +1,124 @@
+{
+ "_label": "DEMO DATA - NOT AN LLM OUTPUT, NOT A RESEARCH RESULT. Hand-made flawed draft for scenario small-high-s42 (Scenario Lab: small / high / seed 42), built from sample_plan_valid_cpsat.json with 5 deliberate faults: VEH-01 over capacity, VEH-05 sent to a blocked road, VEH-04 (boat) sent to an incident that does not allow boats, TEAM-01 on 2 incidents (max 1), SHL-02 over capacity.",
+ "team_assignments": [
+  {
+   "team_id": "TEAM-01",
+   "incident_id": "INC-01"
+  },
+  {
+   "team_id": "TEAM-02",
+   "incident_id": "INC-03"
+  },
+  {
+   "team_id": "TEAM-03",
+   "incident_id": "INC-04"
+  },
+  {
+   "team_id": "TEAM-01",
+   "incident_id": "INC-02"
+  }
+ ],
+ "vehicle_assignments": [
+  {
+   "vehicle_id": "VEH-01",
+   "incident_id": "INC-03",
+   "trips": 1,
+   "people": 40
+  },
+  {
+   "vehicle_id": "VEH-02",
+   "incident_id": "INC-03",
+   "trips": 2,
+   "people": 12
+  },
+  {
+   "vehicle_id": "VEH-03",
+   "incident_id": "INC-04",
+   "trips": 4,
+   "people": 24
+  },
+  {
+   "vehicle_id": "VEH-04",
+   "incident_id": "INC-01",
+   "trips": 2,
+   "people": 24
+  },
+  {
+   "vehicle_id": "VEH-05",
+   "incident_id": "INC-03",
+   "trips": 1,
+   "people": 30
+  },
+  {
+   "vehicle_id": "VEH-05",
+   "incident_id": "INC-04",
+   "trips": 1,
+   "people": 30
+  },
+  {
+   "vehicle_id": "VEH-06",
+   "incident_id": "INC-03",
+   "trips": 1,
+   "people": 6
+  },
+  {
+   "vehicle_id": "VEH-06",
+   "incident_id": "INC-04",
+   "trips": 3,
+   "people": 18
+  },
+  {
+   "vehicle_id": "VEH-05",
+   "incident_id": "INC-01",
+   "trips": 1,
+   "people": 30
+  },
+  {
+   "vehicle_id": "VEH-04",
+   "incident_id": "INC-02",
+   "trips": 1,
+   "people": 12
+  }
+ ],
+ "shelter_allocations": [
+  {
+   "incident_id": "INC-01",
+   "shelter_id": "SHL-01",
+   "people": 24
+  },
+  {
+   "incident_id": "INC-03",
+   "shelter_id": "SHL-01",
+   "people": 36
+  },
+  {
+   "incident_id": "INC-03",
+   "shelter_id": "SHL-02",
+   "people": 45
+  },
+  {
+   "incident_id": "INC-04",
+   "shelter_id": "SHL-03",
+   "people": 72
+  }
+ ],
+ "unserved_demand": [
+  {
+   "incident_id": "INC-01",
+   "people": 57
+  },
+  {
+   "incident_id": "INC-02",
+   "people": 42
+  },
+  {
+   "incident_id": "INC-03",
+   "people": 9
+  },
+  {
+   "incident_id": "INC-04",
+   "people": 1
+  }
+ ],
+ "reasoning_summary": "DEMO: deliberately flawed draft (NOT an LLM output)"
+}

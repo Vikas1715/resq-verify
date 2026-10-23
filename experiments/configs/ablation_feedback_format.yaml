@@ -1,0 +1,13 @@
+# Ablation: does structured violation feedback beat plain-text feedback?
+# Run this file twice, changing only feedback_format (structured / free_text), then compare the two experiments.
+name: ablation-feedback-structured
+description: M3 only, structured feedback. Duplicate with feedback_format free_text for the other arm.
+sizes: [medium]
+scarcity: [high]
+num_scenarios: 10
+base_seed: 3000
+repetitions: 2
+methods: [llm_only, resq_verify]
+max_repair_rounds: 3
+feedback_format: structured
+compute_reference: true

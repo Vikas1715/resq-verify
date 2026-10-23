@@ -1,0 +1,519 @@
+{
+ "scenario_id": "L4-s50",
+ "generator_version": "1.1",
+ "seed": 50,
+ "size": "large",
+ "scarcity": "high",
+ "params": {
+  "n_incidents": 14,
+  "n_teams": 10,
+  "n_vehicles": 20,
+  "n_shelters": 8,
+  "blocked_road_prob": 0.4,
+  "transport_ratio": 0.6,
+  "shelter_ratio": 0.65,
+  "team_unavailable_prob": 0.25,
+  "level": "L4",
+  "compat_restrict_prob": 0.35,
+  "boat_cap": 2,
+  "team_slot_ratio": 0.6,
+  "shelter_skew": 0.4,
+  "interlock_prob": 0.7,
+  "overrides": {}
+ },
+ "difficulty_level": "L4",
+ "incidents": [
+  {
+   "id": "INC-01",
+   "name": "Riverside (flood)",
+   "hazard": "flood",
+   "people": 83,
+   "priority": 5,
+   "road_id": "RD-01",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "ambulance",
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-02",
+   "name": "Hillcrest (flood)",
+   "hazard": "flood",
+   "people": 119,
+   "priority": 3,
+   "road_id": "RD-02",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance",
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-03",
+   "name": "Old Market (landslide)",
+   "hazard": "landslide",
+   "people": 69,
+   "priority": 1,
+   "road_id": "RD-03",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "truck",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-04",
+   "name": "Lakeview (earthquake)",
+   "hazard": "earthquake",
+   "people": 83,
+   "priority": 5,
+   "road_id": "RD-04",
+   "waterway": true,
+   "narrow_access": true,
+   "allowed_vehicle_types": [
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-05",
+   "name": "Station Road (landslide)",
+   "hazard": "landslide",
+   "people": 71,
+   "priority": 5,
+   "road_id": "RD-05",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "truck",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-06",
+   "name": "Harbour (earthquake)",
+   "hazard": "earthquake",
+   "people": 80,
+   "priority": 1,
+   "road_id": "RD-06",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance",
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-07",
+   "name": "Greenfield (flood)",
+   "hazard": "flood",
+   "people": 52,
+   "priority": 1,
+   "road_id": "RD-07",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-08",
+   "name": "North Camp (earthquake)",
+   "hazard": "earthquake",
+   "people": 125,
+   "priority": 2,
+   "road_id": "RD-08",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-09",
+   "name": "Temple Hill (building fire)",
+   "hazard": "building_fire",
+   "people": 62,
+   "priority": 3,
+   "road_id": "RD-09",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-10",
+   "name": "Canal Street (flood)",
+   "hazard": "flood",
+   "people": 101,
+   "priority": 1,
+   "road_id": "RD-10",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "truck",
+    "ambulance",
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-11",
+   "name": "Mill Quarter (landslide)",
+   "hazard": "landslide",
+   "people": 85,
+   "priority": 1,
+   "road_id": "RD-11",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "bus",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-12",
+   "name": "East Ward (landslide)",
+   "hazard": "landslide",
+   "people": 72,
+   "priority": 5,
+   "road_id": "RD-12",
+   "waterway": false,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "truck",
+    "ambulance"
+   ]
+  },
+  {
+   "id": "INC-13",
+   "name": "Orchard Lane (flood)",
+   "hazard": "flood",
+   "people": 105,
+   "priority": 1,
+   "road_id": "RD-13",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "boat"
+   ]
+  },
+  {
+   "id": "INC-14",
+   "name": "Bridge End (earthquake)",
+   "hazard": "earthquake",
+   "people": 122,
+   "priority": 2,
+   "road_id": "RD-14",
+   "waterway": true,
+   "narrow_access": false,
+   "allowed_vehicle_types": [
+    "boat"
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "id": "RD-01",
+   "blocked": false
+  },
+  {
+   "id": "RD-02",
+   "blocked": false
+  },
+  {
+   "id": "RD-03",
+   "blocked": false
+  },
+  {
+   "id": "RD-04",
+   "blocked": true
+  },
+  {
+   "id": "RD-05",
+   "blocked": false
+  },
+  {
+   "id": "RD-06",
+   "blocked": false
+  },
+  {
+   "id": "RD-07",
+   "blocked": false
+  },
+  {
+   "id": "RD-08",
+   "blocked": true
+  },
+  {
+   "id": "RD-09",
+   "blocked": false
+  },
+  {
+   "id": "RD-10",
+   "blocked": false
+  },
+  {
+   "id": "RD-11",
+   "blocked": false
+  },
+  {
+   "id": "RD-12",
+   "blocked": false
+  },
+  {
+   "id": "RD-13",
+   "blocked": true
+  },
+  {
+   "id": "RD-14",
+   "blocked": true
+  }
+ ],
+ "teams": [
+  {
+   "id": "TEAM-01",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-02",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-03",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-04",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-05",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-06",
+   "available": false,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-07",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-08",
+   "available": false,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-09",
+   "available": true,
+   "max_incidents": 1
+  },
+  {
+   "id": "TEAM-10",
+   "available": true,
+   "max_incidents": 1
+  }
+ ],
+ "vehicles": [
+  {
+   "id": "VEH-01",
+   "type": "boat",
+   "capacity": 12,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-02",
+   "type": "boat",
+   "capacity": 12,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-03",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 3
+  },
+  {
+   "id": "VEH-04",
+   "type": "bus",
+   "capacity": 30,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-05",
+   "type": "bus",
+   "capacity": 30,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-06",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 3
+  },
+  {
+   "id": "VEH-07",
+   "type": "bus",
+   "capacity": 30,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-08",
+   "type": "bus",
+   "capacity": 30,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-09",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-10",
+   "type": "ambulance",
+   "capacity": 6,
+   "max_trips": 3
+  },
+  {
+   "id": "VEH-11",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-12",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-13",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 3
+  },
+  {
+   "id": "VEH-14",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-15",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 2
+  },
+  {
+   "id": "VEH-16",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 1
+  },
+  {
+   "id": "VEH-17",
+   "type": "bus",
+   "capacity": 30,
+   "max_trips": 3
+  },
+  {
+   "id": "VEH-18",
+   "type": "ambulance",
+   "capacity": 6,
+   "max_trips": 3
+  },
+  {
+   "id": "VEH-19",
+   "type": "ambulance",
+   "capacity": 6,
+   "max_trips": 4
+  },
+  {
+   "id": "VEH-20",
+   "type": "truck",
+   "capacity": 20,
+   "max_trips": 1
+  }
+ ],
+ "shelters": [
+  {
+   "id": "SHL-01",
+   "name": "Shelter A",
+   "capacity": 398
+  },
+  {
+   "id": "SHL-02",
+   "name": "Shelter B",
+   "capacity": 65
+  },
+  {
+   "id": "SHL-03",
+   "name": "Shelter C",
+   "capacity": 43
+  },
+  {
+   "id": "SHL-04",
+   "name": "Shelter D",
+   "capacity": 74
+  },
+  {
+   "id": "SHL-05",
+   "name": "Shelter E",
+   "capacity": 84
+  },
+  {
+   "id": "SHL-06",
+   "name": "Shelter F",
+   "capacity": 39
+  },
+  {
+   "id": "SHL-07",
+   "name": "Shelter G",
+   "capacity": 45
+  },
+  {
+   "id": "SHL-08",
+   "name": "Shelter H",
+   "capacity": 51
+  }
+ ],
+ "difficulty": {
+  "total_demand": 1229,
+  "total_transport_capacity": 736,
+  "total_shelter_capacity": 799,
+  "demand_to_transport_ratio": 1.6698,
+  "demand_to_shelter_ratio": 1.5382,
+  "blocked_road_fraction": 0.2857,
+  "unreachable_incidents": 0,
+  "available_team_slots": 8,
+  "team_load_ratio": 1.75,
+  "feasible_vehicle_incident_pairs": 145,
+  "difficulty_score": 45.133,
+  "servable_incidents": 14,
+  "servable_demand_fraction": 1.0,
+  "boat_count": 2,
+  "restricted_incidents": 6
+ },
+ "content_hash": "d5b0b6b1d420483f",
+ "created_at": "2026-10-23T21:17:36.707+00:00"
+}
